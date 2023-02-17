@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Moster</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <h1>Money Moster</h1>
+
+        <div class="flex">
+            <div class="grid grid-cols-2 gap-6">
+                <img src="money.jpg" alt="">
+            </div>
+            <div>
+                <h1>Income</h1>
+                
+                <label for="iname">Income:</label>
+                <input type="text" id="iname" name="iname" class="input-field"><br>
+                
+                
+                <h1>Expenses</h1>
+                <label for="fname">Food:</label>
+                <input type="text" id="fname" name="fname" class="input-field"><br>
+
+                <label for="rname">Rent:</label>
+                <input type="text" id="rname" name="rname" class="input-field"><br>
+
+                <label for="cname">clother:</label>
+                <input type="text" id="cname" name="cname" class="input-field"><br>
+                <button class="btn btn-wide" id="Calculate-btn">Calculate</button>
+                
+                <p>Total Expenses: <span id="totalExpenses">00</span></p>
+                <p>Blance:<span id="blance">00</span></p>
+
+                <div>
+                    <label for="sname">Save:</label>
+                    <input type="text" id="sname" name="sname" class="input-field">
+                    <p>%</p>
+                    <button id="saveingbtn">Button</button>
+                </div>
+
+                <p>Saving Amount: <span id="savingbtn">00</span></p>
+                <p>Remaning Blance:<span id="remaningbtn">00</span></p>
+               
+                
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
