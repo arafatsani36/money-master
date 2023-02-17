@@ -31,15 +31,19 @@ function totalCost(id){
 document.getElementById('saveingbtn').addEventListener('click', function(){
     const myBlance = totalCost('iname');
     const saveingField= totalCost('sname');
+    const blanceElement = document.getElementById('blance');
+    // your remaining balance
+    const blance = parseInt(blanceElement.innerText)
 
+    // your saving
     const saveingAmountElement = document.getElementById('savingbtn');
 
-    // const remaningBtnElement = document.getElementById('remaningbtn');
+    const remaningBtnElement = document.getElementById('remaningbtn');
     
 
-    saveingAmountElement.innerText = parseInt(myBlance) * parseInt(saveingField) / 100;
+    saveingAmountElement.innerText = blance * parseInt(saveingField) / 100;
    
-    // remaningBtnElement.innerText = remaning;
+    remaningBtnElement.innerText = blance - blance * parseInt(saveingField) / 100;;
 
 
     
